@@ -1,0 +1,100 @@
+
+.navbar{
+flex-direction: column;
+height: 11vh;
+}
+.navbar ul li{
+    position: relative;
+    top: -1.5rem;
+}
+.navbar ul li a{
+    font-size: 1rem;
+}
+#home::before{
+    height: 50vh;
+}
+#home{
+
+font-size: 1rem;
+}
+#container{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.our {
+    position: relative;
+    top: 4rem;
+
+}
+#box1,#box2,#box3{
+    position: relative;
+    width: 92vw;
+    /* right: 3rem; */
+    margin: .5rem;
+}
+
+#client h1{
+  
+right: 30rem;
+
+}
+#client{
+    /* flex-direction: column; */
+    /* border: none; */
+    /* flex-wrap: wrap; */
+   
+    /* display: flex; */
+    height: 20vh;
+    background:center;
+}
+#client::before{
+    height:20vh ;
+}
+#client-item,#client-item1,#client-item2,#client-item3
+{
+    
+    
+    position: relative;
+    padding: 0px;
+    top: 50%;
+    /* left: 2%; */
+    /* left: -rem; */
+}
+#client-item a img{
+
+    height: 50px;
+    width: 50px;
+}
+#client-item1 a img{
+
+    height: 50px;
+    width: 50px;
+}
+#client-item2 a img{
+
+    height: 50px;
+    width: 50px;
+}
+#client-item3 img{
+
+    height: 50px;
+    width: 50px;
+}
+
+#client h1{
+    left: 37%;
+}
+#contact{
+    border: none;
+    height: 60vh;
+}
+#foot{
+    height: 6.2vh;
+
+}
+#contact::before{
+    height: 60vh;
+}
+#contact{
+  margin-top:90px;  
+}

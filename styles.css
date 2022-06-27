@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+   /* overflow: hidden ; */
+}
+html{
+
+    scroll-behavior: smooth;
+}
+    body{
+        background-color: rgb(202, 202, 240);
+        width: 100%;
+    } 
+ .navbar{
+    position: sticky;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: yellow;  */
+    font-weight: bold;
+    align-items: center;
+    top: 0%;
+    z-index: 4;
+}
+
+#logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    border: none;
+    margin: 10px;
+}
+.navbar ul{
+    display: flex;
+    margin: 10px ;
+}
+.navbar li{
+    list-style: none;
+    font: 1.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 15px ;
+    color: rgb(199, 24, 24);
+    text-shadow: 3px 2px 2px blue;
+    
+}
+.navbar ul li a:hover,.btn:hover {
+    color: blue; 
+    text-shadow: 1px 2px 2px black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8px;
+    border: 2px solid blue;
+}
+.navbar::before{
+    content: " ";
+    z-index: -1;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    left: 0%;
+    top: 0%;
+} 
+ #home{
+    margin-top: 100px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Chettan 2', cursive;
+    }
+    #home h1{
+        margin-bottom: 30px;
+
+    }
+    .btn
+    {
+        margin-top: 30px;
+        border-radius: 20px;
+        padding: 5px 10px;
+        background-color: rgb(54, 49, 49);
+        border: 2px solid white;
+        color: white;
+    }
+#home::before{
+    content: "";
+    position: absolute;
+    height: 55vh;
+    width: 100%;
+    background: url(men.jpg)no-repeat center/cover;
+    z-index: -10;
+    opacity: .89;
+    top: 0%;
+    left: 0%;
+} 
+ .our
+{
+     color: black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: x-large;
+    top: 7vh;
+    font-family: 'Baloo Chettan 2', cursive; 
+    text-shadow: 1px 2px 2px rgb(220, 67, 67);
+}
+#container
+{
+    display: flex;
+    position: relative;
+    top: 12vh;
+}
+#box1,#box2,#box3{
+    border: 3px solid rgb(83, 35, 35);
+    border-radius: 1.8rem;
+    height: 28vh;
+    width: 23vw;
+    margin-left: 6rem;
+    /* justify-content: center; */
+   text-align: center;
+    align-items: center;
+    padding-top: 3rem;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: whitesmoke;
+    transition: all 1s ease-in-out .3s;
+    box-shadow: 8px 8px 10px green; 
+    
+}
+#box1:hover,#box2:hover,#box3:hover{
+    color: red;
+    box-shadow: 10px 10px 10px red; 
+}
+#box1{
+    background: url(dslr.jpg)no-repeat center/cover;
+}
+#box2{
+    background: url(mini\ dslr.jpg)no-repeat center/cover;
+}
+#box3{
+    background: url(apple.jpg)no-repeat center/cover;
+}
+#client
+{    display: flex;
+    position: relative;
+    top: 12vh;
+    justify-content: center;
+    /* border: 2px solid black; */
+     height: 43vh;
+    margin-top: 2rem;
+   
+}
+#client::before{
+    
+    content: ""; 
+    position: absolute;
+    height: 37vh;
+    width: 100%;
+    background: url(img.jpeg)no-repeat center center/cover;
+    z-index: -1;
+    opacity: .3;
+     top: 0%;
+    left: 0%; 
+
+}
+#client h1{
+    position: relative;
+    left: 17rem;
+    font-size: 45px;
+    height: 10vh;
+    text-shadow: 1px 2px 2px rgb(220, 67, 67);
+    font-family: 'Baloo Chettan 2', cursive;
+}
+img
+{
+    height: 5rem;
+}
+#client-item,#client-item1,#client-item2,#client-item3
+{
+    display: flex;
+    position: relative;
+    top: 9.9rem;
+  margin-left: 3rem;
+  right: 9rem;
+}
+#client-item img:hover,#client-item1 img:hover,#client-item2 img:hover,#client-item3 img:hover{
+    padding: 10px;
+    box-shadow: 7px 5px 10px green; 
+
+}
+ #contact h1{
+    position: relative;
+    font-size: 45px;
+    font-family: 'Baloo Chettan 2', cursive;
+    /* left: 37rem; */
+    top: 3rem;    
+
+    text-shadow: 1px 2px 2px rgb(220, 67, 67);
+}#contact{
+    
+    position:relative;
+    /* border: 2px solid black; */
+    top: 5.5rem;
+    text-align: center;
+     height:  73vh;
+   
+}
+#contact::before{
+    content: "";
+    background: url(back.jpg) center center/cover;
+    /* background-position: -4px -89px; */
+    position: absolute;
+    z-index: -1;
+    opacity: .3;
+     top: 0%;
+    left: 0%; 
+    height: 73vh;
+    width: 100%;
+}
+input,#btni{
+margin: 10px;
+border: 2px solid red;
+background-color: khaki;
+padding: .5rem 4rem;
+text-align: center;
+font-size: large;
+border-radius: 3rem;
+font-family: 'Poppins', sans-serif;
+}
+#btni
+{
+    background-color: aqua;
+}
+#btni:hover{
+    background-color: white;
+    color: red; 
+    text-shadow: 1px 2px 2px black;
+    padding: .8rem 4rem;
+}
+#input{
+    
+    margin-top: 6rem;
+}  
+ .our h1:hover,#client h1:hover,#contact h1:hover,#home h1:hover{
+    color: blue;
+    /* padding: 10px; */
+    text-shadow: 1px 2px 2px black;
+    /* box-shadow: 7px 5px 10px green;  */
+}
+#home h1{
+    color: black;
+    text-shadow: 1px 2px 2px rgb(220, 67, 67);
+    font-size: 45px;
+    font-family: 'Baloo Chettan 2', cursive; 
+    text-shadow: 1px 2px 2px rgb(220, 67, 67);
+
+}
+#foot{
+    /* background-color: rgb(87, 71, 71); */
+    color: white;
+    position: relative;
+    top: 2rem;
+    font-size: larger;
+    height: 7.4vh;
+    text-align: center;
+}
+#foot::before{
+    content: " ";
+    z-index: -1;
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    left: 0%;
+    top: 0%;
+}
+
